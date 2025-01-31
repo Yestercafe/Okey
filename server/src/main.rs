@@ -18,12 +18,20 @@ async fn main() {
             .route("/ping", post(api::ping))
             .route("/echo", post(api::echo))
             .nest(
+                "/lobby",
+                Router::new().route("/rooms", post(api::fetch_rooms)),
+            )
+            .nest(
                 "/room",
                 Router::new()
                     .route("/create", post(api::create_room))
                     .route("/enter", post(api::enter_room))
                     .route("/start", post(api::start_room))
                     .route("/query", post(api::query_room)),
+            )
+            .nest(
+                "/game",
+                Router::new().route("/fetchCard", post(api::fetch_card)),
             ),
     );
 

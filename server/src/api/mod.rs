@@ -4,3 +4,7 @@ pub mod echo;
 pub use echo::*;
 pub mod room;
 pub use room::*;
+pub mod game;
+pub use game::*;
+pub mod lobby;
+pub use lobby::*;

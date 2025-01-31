@@ -14,6 +14,7 @@ pub enum StatusCode {
     Full = 2,
     NotFound = 3,
     NotAvailable = 4,
+    Empty = 5,
     InternalError = 1000,
 }
 

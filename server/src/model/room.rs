@@ -12,9 +12,9 @@ pub struct RoomData {
     players: HashSet<String>,
     is_started: bool,
 
-    deck: HashSet<i32>,
-    hands: HashMap<String, HashSet<i32>>,
-    table: Vec<Vec<i32>>,
+    pub deck: HashSet<i32>,
+    pub hands: HashMap<String, HashSet<i32>>,
+    pub table: Vec<Vec<i32>>,
 }
 
 impl RoomData {
