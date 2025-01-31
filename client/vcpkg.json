@@ -1,0 +1,18 @@
+{
+  "name" : "okey",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "7fd612ee1c57192d49028ed6a922e5e8bdb257f3",
+  "dependencies" : [ {
+    "name" : "fmt",
+    "version>=" : "11.0.2#1"
+  }, {
+    "name" : "glog",
+    "version>=" : "0.7.1"
+  }, {
+    "name" : "jsoncpp",
+    "version>=" : "1.9.6"
+  }, {
+    "name" : "cpr",
+    "version>=" : "1.11.0"
+  } ]
+}
